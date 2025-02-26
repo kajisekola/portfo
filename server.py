@@ -36,12 +36,6 @@ def submit_form():
             # write_to_file(data)
             write_to_csv(data)
 
-            # with open('database.txt', mode='a') as file:
-            #     email = data['email']
-            #     subject = data['subject']
-            #     message = data['message']
-            #     file.write(f'\n{email}, {subject}, {message}')
-            # print(data)
             return redirect('/thankyou.html')
         except:
             return 'did not save to the database'
